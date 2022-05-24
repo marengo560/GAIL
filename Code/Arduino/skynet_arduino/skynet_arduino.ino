@@ -5,13 +5,14 @@
 #include <Servo.h>
 #include "adagio.h"
 
-Servo servo1, servo2;
+Servo riser, pan, tilt;
 
 int pos;
+int tiltPos;
+int riserPos=0;
 
 void setup() {
-  servo1.attach(9);  
-  servo2.attach(10);
+  initServos();
   initSerial();
   cmdRequest = true;  //request a user command
   Serial.println("(i)Enter <1> including brackets for menu(/i)");
@@ -41,14 +42,18 @@ void loop() {
         break;
 
       case 2:  // <2>
-        funct2();
+        changeAwakeState();
         break;
 
-      case 3:  // <2>
-        funct3();
-        break;
+      // case 3:  // <2>
+      //   pan();
+      //   break;
 
-      case 4:           // <4>
+      // case 4:  // <2>
+      //   tilt();
+      //   break;
+
+      case 5:           // <4>
         blinkLED_BUILT_IN();
         newData = requestUserInput = false;  // Clear flags, downstream function could request user input again
         cmdRequest = true;                   // Should ideally be set by called function return - task may not complete on this call
@@ -68,7 +73,16 @@ void loop() {
 
 
 /*-------------------------FUNCTIONS----------------------------*/
-
+void initServos(){
+  
+  riser.attach(9);  
+  pan.attach(10);
+  tilt.attach(11);
+  riser.write(90);  
+  pan.write(105);
+  tilt.write(80);
+  
+}
 void initSerial() {
   /*
   unsigned long t0, t1;
@@ -145,39 +159,47 @@ void blinkLED_BUILT_IN() {
   delay(100);
 }
 
-void funct2() {
+void changeAwakeState() {
   if (requestUserInput) {
     if (newData) {
       String argument = String(rxBuff);
-      float readNum = sanitiseInputNum(argument.toInt());
+      int awakeFlag = sanitiseInputNum(argument.toInt());
       //Do Something------------------------------------
-            
-        for (pos = 20; pos <= 70; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    servo1.write(pos);   
-    delay(50); 
- 
-    }
-    for (pos = 0; pos <= 85; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    servo2.write(pos);   
-    delay(50); 
- 
-    }
+      if(awakeFlag==1){
+          for (riserPos = 90; riserPos <= 180; riserPos += 1) { // goes from 0 degrees to 180 degrees
+            riser.write(riserPos); 
+            delay(5); 
+            tiltPos = map(riserPos,80,180,80,20);     
+            tilt.write(tiltPos);             // tell servo to go to position in variable 'pos'
+            delay(5); 
+          }
+          } 
+else{         
+   for (riserPos = 180; riserPos >= 90; riserPos -= 1) { // goes from 0 degrees to 180 degrees
+            riser.write(riserPos); 
+            delay(5); 
+            tiltPos = map(riserPos,80,180,80,20);     
+            tilt.write(tiltPos);             // tell servo to go to position in variable 'pos'
+            delay(5); 
+   }
+  
+}                
       Serial.print("(i)Function <2> called. Argument parsed correctly as float. Value was: ");
-      Serial.print(readNum);
+      Serial.print(awakeFlag);
       Serial.println("(/i)");
+    
       //----------------------------------------------------
       newData = requestUserInput = false;
       cmdRequest = true;  // return to looking for user commands
+      }
     }
-  } else {
+   else {
     newData = false;  // if rxBuff data isn't available request it
     requestUserInput = true;
   }
 }
 
-void funct3() {
+void moveServos() {
   if (requestUserInput) {
     if (newData) {
       String argument = String(rxBuff);
@@ -185,7 +207,7 @@ void funct3() {
       float readNum = sanitiseInputNum(argument.toInt());
       //Do Something------------------------------------
             
-      servo2.write(readNum);
+      pan.write(readNum);
       Serial.print("(i)Function <2> called. Argument parsed correctly as float. Value was: ");
       Serial.print(readNum);
       Serial.println("(/i)");

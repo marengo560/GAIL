@@ -2,7 +2,7 @@
 #include <EEPROM.h>         // Used to read the internal Arduino EEPROM
 
 // Serial Port and Generic Constants
-const int BAUDRATE = 19200;        // Serial port speed
+const int BAUDRATE = 9600;        // Serial port speed
 const uint8_t DEBUG_PIN = 48;
 const uint8_t MAX_CMD_LEN = 32;    // Max Data size of command received (usually 2 chars that represent a number e.g <12>)
 const uint8_t MAX_DATA_LEN = 104;  // Max Data size of data received as argument for the functions (can be anything so we give enough space)
