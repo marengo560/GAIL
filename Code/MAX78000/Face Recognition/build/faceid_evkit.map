@@ -734,7 +734,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x16f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
  .debug_macro   0x00000000      0x103 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
  .debug_macro   0x00000000      0x1df C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
- .debug_macro   0x00000000      0x5e9 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
+ .debug_macro   0x00000000      0x5ef C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
  .debug_macro   0x00000000      0x504 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
  .debug_macro   0x00000000       0x6c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
  .debug_macro   0x00000000       0x52 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
@@ -8552,7 +8552,7 @@ LOAD linker stubs
  .debug_ranges  0x00002228       0x20 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
  .debug_ranges  0x00002248       0x48 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_common.o)
 
-.debug_macro    0x00000000    0x15ae4
+.debug_macro    0x00000000    0x15ade
  .debug_macro   0x00000000      0x525 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/main.o
  .debug_macro   0x00000525      0xa8a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/main.o
  .debug_macro   0x00000faf       0x22 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/main.o
@@ -8656,95 +8656,95 @@ LOAD linker stubs
  .debug_macro   0x00009204      0x312 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_home.o
  .debug_macro   0x00009516       0x1c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_home.o
  .debug_macro   0x00009532      0x5e9 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_home.o
- .debug_macro   0x00009b1b      0x532 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
- .debug_macro   0x0000a04d       0x22 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
- .debug_macro   0x0000a06f      0x506 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a575       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a58b      0x10e C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a699       0x8d C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a726       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a73c       0x29 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a765       0xfa C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000a85f      0x1c2 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_macro   0x0000aa21      0x2df C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
- .debug_macro   0x0000ad00      0x19b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
- .debug_macro   0x0000ae9b      0x2dd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
- .debug_macro   0x0000b178       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
- .debug_macro   0x0000b18e       0x40 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
- .debug_macro   0x0000b1ce      0x223 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
- .debug_macro   0x0000b3f1      0x352 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000b743      0x23b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000b97e       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000b994      0x51a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000beae       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000bec4       0x10 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000bed4       0x41 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000bf15      0x12c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_macro   0x0000c041      0x26c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
- .debug_macro   0x0000c2ad       0x8e C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
- .debug_macro   0x0000c33b       0x51 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
- .debug_macro   0x0000c38c       0x64 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
- .debug_macro   0x0000c3f0      0x108 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/pb.o
- .debug_macro   0x0000c4f8      0x39d C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/camera.o
- .debug_macro   0x0000c895      0x2e4 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
- .debug_macro   0x0000cb79      0x5e4 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
- .debug_macro   0x0000d15d      0x2c7 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/sccb.o
- .debug_macro   0x0000d424      0x2af C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/max20303.o
- .debug_macro   0x0000d6d3      0x1ac C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
- .debug_macro   0x0000d87f       0x10 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
- .debug_macro   0x0000d88f      0x2cc C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
- .debug_macro   0x0000db5b      0x829 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
- .debug_macro   0x0000e384      0x11c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
- .debug_macro   0x0000e4a0      0xa8a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
- .debug_macro   0x0000ef2a       0xed C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
- .debug_macro   0x0000f017      0x516 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
- .debug_macro   0x0000f52d      0x237 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
- .debug_macro   0x0000f764      0x123 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
- .debug_macro   0x0000f887      0x1b7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
- .debug_macro   0x0000fa3e      0x1f5 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
- .debug_macro   0x0000fc33      0x1aa C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
- .debug_macro   0x0000fddd      0x1e3 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
- .debug_macro   0x0000ffc0      0x1c2 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
- .debug_macro   0x00010182      0x14f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
- .debug_macro   0x000102d1      0x722 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
- .debug_macro   0x000109f3      0x155 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
- .debug_macro   0x00010b48      0x167 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(lp_ai85.o)
- .debug_macro   0x00010caf      0x13f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
- .debug_macro   0x00010dee      0x504 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
- .debug_macro   0x000112f2      0x113 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
- .debug_macro   0x00011405      0x2ce C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
- .debug_macro   0x000116d3      0x5b7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
- .debug_macro   0x00011c8a       0x3a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
- .debug_macro   0x00011cc4      0x2c8 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
- .debug_macro   0x00011f8c      0x140 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
- .debug_macro   0x000120cc       0x7e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
- .debug_macro   0x0001214a      0x141 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
- .debug_macro   0x0001228b      0x2d1 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
- .debug_macro   0x0001255c      0x835 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
- .debug_macro   0x00012d91      0x245 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
- .debug_macro   0x00012fd6      0x567 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
- .debug_macro   0x0001353d      0x2b9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
- .debug_macro   0x000137f6      0x1a7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
- .debug_macro   0x0001399d      0x182 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
- .debug_macro   0x00013b1f       0x1c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
- .debug_macro   0x00013b3b      0x172 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
- .debug_macro   0x00013cad      0x152 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_reva.o)
- .debug_macro   0x00013dff      0x169 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
- .debug_macro   0x00013f68      0x5cc C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
- .debug_macro   0x00014534      0x171 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_revb.o)
- .debug_macro   0x000146a5      0x15d C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
- .debug_macro   0x00014802      0x3d6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
- .debug_macro   0x00014bd8      0x3c4 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
- .debug_macro   0x00014f9c      0x123 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
- .debug_macro   0x000150bf      0x2af C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
- .debug_macro   0x0001536e      0x156 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
- .debug_macro   0x000154c4      0x1aa C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
- .debug_macro   0x0001566e      0x138 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_reva.o)
- .debug_macro   0x000157a6       0xf6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
- .debug_macro   0x0001589c       0xfe C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
- .debug_macro   0x0001599a      0x14a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_common.o)
+ .debug_macro   0x00009b1b      0x52c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
+ .debug_macro   0x0000a047       0x22 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
+ .debug_macro   0x0000a069      0x506 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a56f       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a585      0x10e C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a693       0x8d C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a720       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a736       0x29 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a75f       0xfa C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000a859      0x1c2 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_macro   0x0000aa1b      0x2df C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
+ .debug_macro   0x0000acfa      0x19b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
+ .debug_macro   0x0000ae95      0x2dd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
+ .debug_macro   0x0000b172       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
+ .debug_macro   0x0000b188       0x40 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
+ .debug_macro   0x0000b1c8      0x223 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
+ .debug_macro   0x0000b3eb      0x352 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000b73d      0x23b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000b978       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000b98e      0x51a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000bea8       0x16 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000bebe       0x10 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000bece       0x41 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000bf0f      0x12c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_macro   0x0000c03b      0x26c C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
+ .debug_macro   0x0000c2a7       0x8e C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
+ .debug_macro   0x0000c335       0x51 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
+ .debug_macro   0x0000c386       0x64 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
+ .debug_macro   0x0000c3ea      0x108 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/pb.o
+ .debug_macro   0x0000c4f2      0x39d C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/camera.o
+ .debug_macro   0x0000c88f      0x2e4 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
+ .debug_macro   0x0000cb73      0x5e4 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
+ .debug_macro   0x0000d157      0x2c7 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/sccb.o
+ .debug_macro   0x0000d41e      0x2af C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/max20303.o
+ .debug_macro   0x0000d6cd      0x1ac C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
+ .debug_macro   0x0000d879       0x10 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
+ .debug_macro   0x0000d889      0x2cc C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
+ .debug_macro   0x0000db55      0x829 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
+ .debug_macro   0x0000e37e      0x11c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+ .debug_macro   0x0000e49a      0xa8a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+ .debug_macro   0x0000ef24       0xed C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+ .debug_macro   0x0000f011      0x516 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+ .debug_macro   0x0000f527      0x237 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+ .debug_macro   0x0000f75e      0x123 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+ .debug_macro   0x0000f881      0x1b7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
+ .debug_macro   0x0000fa38      0x1f5 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
+ .debug_macro   0x0000fc2d      0x1aa C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
+ .debug_macro   0x0000fdd7      0x1e3 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
+ .debug_macro   0x0000ffba      0x1c2 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
+ .debug_macro   0x0001017c      0x14f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
+ .debug_macro   0x000102cb      0x722 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
+ .debug_macro   0x000109ed      0x155 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
+ .debug_macro   0x00010b42      0x167 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(lp_ai85.o)
+ .debug_macro   0x00010ca9      0x13f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+ .debug_macro   0x00010de8      0x504 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+ .debug_macro   0x000112ec      0x113 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+ .debug_macro   0x000113ff      0x2ce C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
+ .debug_macro   0x000116cd      0x5b7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
+ .debug_macro   0x00011c84       0x3a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
+ .debug_macro   0x00011cbe      0x2c8 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
+ .debug_macro   0x00011f86      0x140 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+ .debug_macro   0x000120c6       0x7e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+ .debug_macro   0x00012144      0x141 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
+ .debug_macro   0x00012285      0x2d1 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
+ .debug_macro   0x00012556      0x835 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
+ .debug_macro   0x00012d8b      0x245 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
+ .debug_macro   0x00012fd0      0x567 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
+ .debug_macro   0x00013537      0x2b9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
+ .debug_macro   0x000137f0      0x1a7 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
+ .debug_macro   0x00013997      0x182 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
+ .debug_macro   0x00013b19       0x1c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
+ .debug_macro   0x00013b35      0x172 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
+ .debug_macro   0x00013ca7      0x152 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_reva.o)
+ .debug_macro   0x00013df9      0x169 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
+ .debug_macro   0x00013f62      0x5cc C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
+ .debug_macro   0x0001452e      0x171 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_revb.o)
+ .debug_macro   0x0001469f      0x15d C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+ .debug_macro   0x000147fc      0x3d6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+ .debug_macro   0x00014bd2      0x3c4 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+ .debug_macro   0x00014f96      0x123 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
+ .debug_macro   0x000150b9      0x2af C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+ .debug_macro   0x00015368      0x156 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
+ .debug_macro   0x000154be      0x1aa C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
+ .debug_macro   0x00015668      0x138 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_reva.o)
+ .debug_macro   0x000157a0       0xf6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
+ .debug_macro   0x00015896       0xfe C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+ .debug_macro   0x00015994      0x14a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_common.o)
 
-.debug_line     0x00000000    0x1e3a7
+.debug_line     0x00000000    0x1e3a9
  .debug_line    0x00000000      0xa61 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/main.o
  .debug_line    0x00000a61       0x37 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/logo_rgb565.o
  .debug_line    0x00000a98       0x3a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/SansSerif16x16.o
@@ -8752,48 +8752,48 @@ LOAD linker stubs
  .debug_line    0x00000b0c      0x6ed C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/utils.o
  .debug_line    0x000011f9      0x28b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state.o
  .debug_line    0x00001484      0x5c4 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_home.o
- .debug_line    0x00001a48      0xe0b C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
- .debug_line    0x00002853     0x3ecc C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
- .debug_line    0x0000671f      0xb7a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
- .debug_line    0x00007299      0x76f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
- .debug_line    0x00007a08      0x730 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
- .debug_line    0x00008138      0x60f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
- .debug_line    0x00008747      0x5ff C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/pb.o
- .debug_line    0x00008d46      0xfbd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/camera.o
- .debug_line    0x00009d03      0xf54 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
- .debug_line    0x0000ac57      0xa50 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/sccb.o
- .debug_line    0x0000b6a7      0xabd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/max20303.o
- .debug_line    0x0000c164      0x35f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
- .debug_line    0x0000c4c3      0x586 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
- .debug_line    0x0000ca49      0x78b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
- .debug_line    0x0000d1d4      0x301 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
- .debug_line    0x0000d4d5      0xbce C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
- .debug_line    0x0000e0a3      0x499 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
- .debug_line    0x0000e53c      0x59f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
- .debug_line    0x0000eadb      0x589 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
- .debug_line    0x0000f064      0x65a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
- .debug_line    0x0000f6be      0xe6f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
- .debug_line    0x0001052d      0xaac C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(lp_ai85.o)
- .debug_line    0x00010fd9      0x993 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
- .debug_line    0x0001196c      0x6ba C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
- .debug_line    0x00012026      0xaf0 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
- .debug_line    0x00012b16     0x232b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
- .debug_line    0x00014e41      0x42b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
- .debug_line    0x0001526c      0x4a9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
- .debug_line    0x00015715      0x8e6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
- .debug_line    0x00015ffb      0x9e9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
- .debug_line    0x000169e4      0x84e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
- .debug_line    0x00017232      0xb3c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_reva.o)
- .debug_line    0x00017d6e      0xaec C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
- .debug_line    0x0001885a     0x1084 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_revb.o)
- .debug_line    0x000198de      0xc0e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
- .debug_line    0x0001a4ec      0x40b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
- .debug_line    0x0001a8f7     0x1a22 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
- .debug_line    0x0001c319      0xa4f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
- .debug_line    0x0001cd68      0x890 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_reva.o)
- .debug_line    0x0001d5f8      0x3ba C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
- .debug_line    0x0001d9b2      0x4b4 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
- .debug_line    0x0001de66      0x541 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_common.o)
+ .debug_line    0x00001a48      0xe0d C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o
+ .debug_line    0x00002855     0x3ecc C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/cnn.o
+ .debug_line    0x00006721      0xb7a C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/embedding_process.o
+ .debug_line    0x0000729b      0x76f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/board.o
+ .debug_line    0x00007a0a      0x730 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/stdio.o
+ .debug_line    0x0000813a      0x60f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/led.o
+ .debug_line    0x00008749      0x5ff C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/pb.o
+ .debug_line    0x00008d48      0xfbd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/camera.o
+ .debug_line    0x00009d05      0xf54 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/ov7692.o
+ .debug_line    0x0000ac59      0xa50 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/sccb.o
+ .debug_line    0x0000b6a9      0xabd C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/max20303.o
+ .debug_line    0x0000c166      0x35f C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/heap.o
+ .debug_line    0x0000c4c5      0x586 C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/system_max78000.o
+ .debug_line    0x0000ca4b      0x78b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+ .debug_line    0x0000d1d6      0x301 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+ .debug_line    0x0000d4d7      0xbce C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+ .debug_line    0x0000e0a5      0x499 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
+ .debug_line    0x0000e53e      0x59f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
+ .debug_line    0x0000eadd      0x589 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
+ .debug_line    0x0000f066      0x65a C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
+ .debug_line    0x0000f6c0      0xe6f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
+ .debug_line    0x0001052f      0xaac C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(lp_ai85.o)
+ .debug_line    0x00010fdb      0x993 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+ .debug_line    0x0001196e      0x6ba C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+ .debug_line    0x00012028      0xaf0 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
+ .debug_line    0x00012b18     0x232b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
+ .debug_line    0x00014e43      0x42b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+ .debug_line    0x0001526e      0x4a9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
+ .debug_line    0x00015717      0x8e6 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_me17.o)
+ .debug_line    0x00015ffd      0x9e9 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
+ .debug_line    0x000169e6      0x84e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_me17.o)
+ .debug_line    0x00017234      0xb3c C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(rtc_reva.o)
+ .debug_line    0x00017d70      0xaec C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_ai85.o)
+ .debug_line    0x0001885c     0x1084 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_revb.o)
+ .debug_line    0x000198e0      0xc0e C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+ .debug_line    0x0001a4ee      0x40b C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
+ .debug_line    0x0001a8f9     0x1a22 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+ .debug_line    0x0001c31b      0xa4f C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_me17.o)
+ .debug_line    0x0001cd6a      0x890 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(wut_reva.o)
+ .debug_line    0x0001d5fa      0x3ba C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
+ .debug_line    0x0001d9b4      0x4b4 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+ .debug_line    0x0001de68      0x541 C:/MaximSDK/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(tmr_common.o)
 
 .debug_str      0x00000000    0xea94d
  .debug_str     0x00000000    0x362ac C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/main.o

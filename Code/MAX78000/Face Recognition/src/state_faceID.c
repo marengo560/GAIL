@@ -33,7 +33,8 @@
 *******************************************************************************
 */
 #include <string.h>
-
+#include <stdio.h>
+#include <stdint.h>
 #include "board.h"
 #include "mxc_device.h"
 #include "mxc_delay.h"
@@ -120,6 +121,7 @@ static void screen_faceID(void)
 
 static int init(void)
 {
+
     uint32_t run_count = 0;
 #ifdef TFT_ENABLE
     screen_faceID();
@@ -374,6 +376,14 @@ static void run_cnn(int x_offset, int y_offset)
 
     // Get the details of the image from the camera driver.
     camera_get_image(&raw, &imgLen, &w, &h);
+    #ifdef  IMAGE_TO_UART
+    utils_send_img_to_pc(raw, imgLen, w, h, camera_get_pixel_format());
+    //PR_DEBUG("Img sent to pc");
+
+
+    // Send the image through the UART to the console.
+    // "grab_image" python program will read from the console and write to an image file.
+    #endif
 
     pass_time = utils_get_time_ms();
 

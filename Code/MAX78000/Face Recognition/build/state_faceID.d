@@ -18,7 +18,6 @@ C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o: \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\_locale.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\strings.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\string.h \
- C:/MaximSDK/Libraries/Boards/MAX78000/FTHR_RevA/Include/board.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\stdio.h \
  c:\maximsdk\tools\gnutools\10.3\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\types.h \
@@ -34,10 +33,11 @@ C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o: \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\sched.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\machine\types.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\stdio.h \
- C:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/spi_regs.h \
  c:\maximsdk\tools\gnutools\10.3\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\stdint.h \
  c:\maximsdk\tools\gnutools\10.3\arm-none-eabi\include\sys\_intsup.h \
+ C:/MaximSDK/Libraries/Boards/MAX78000/FTHR_RevA/Include/board.h \
+ C:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/spi_regs.h \
  C:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/gpio_regs.h \
  C:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
  C:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \

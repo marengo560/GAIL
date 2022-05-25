@@ -109,6 +109,7 @@ PROJ_CFLAGS+=-DMXC_ASSERT_ENABLE
 
 PROJ_CFLAGS+=-DARM_MATH_CM4
 
+
 ifeq "$(BOARD)" "EvKit_V1"
 PROJ_CFLAGS+=-DROTATE_SCREEN=1
 PROJ_CFLAGS+=-DTFT_ENABLE
@@ -119,7 +120,10 @@ endif
 ifeq "$(BOARD)" "FTHR_RevA"
 # Only enable if 2.4" TFT is connected to Feather
 #PROJ_CFLAGS+=-DTFT_ENABLE
+#PROJ_CFLAGS+=-IMAGE_TO_UART
 endif
+
+
 
 # Enable all warnings
 PROJ_CFLAGS+=-Wall
