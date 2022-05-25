@@ -7,9 +7,6 @@
 
 Servo riser, pan, tilt;
 
-int pos;
-int tiltPos;
-int riserPos=0;
 
 void setup() {
   initServos();
@@ -78,9 +75,9 @@ void initServos(){
   riser.attach(9);  
   pan.attach(10);
   tilt.attach(11);
-  riser.write(90);  
-  pan.write(105);
-  tilt.write(80);
+  riser.write(RISER_SLEEP_POS);  
+  pan.write(PAN_SLEEP_POS);
+  tilt.write(TILT_SLEEP_POS);
   
 }
 void initSerial() {
@@ -166,19 +163,19 @@ void changeAwakeState() {
       int awakeFlag = sanitiseInputNum(argument.toInt());
       //Do Something------------------------------------
       if(awakeFlag==1){
-          for (riserPos = 90; riserPos <= 180; riserPos += 1) { // goes from 0 degrees to 180 degrees
+          for (riserPos = RISER_SLEEP_POS; riserPos <= RISER_AWAKE_POS; riserPos += 1) { // goes from 0 degrees to 180 degrees
             riser.write(riserPos); 
             delay(5); 
-            tiltPos = map(riserPos,80,180,80,20);     
+            tiltPos = map(riserPos,RISER_SLEEP_POS,RISER_AWAKE_POS,TILT_SLEEP_POS,TILT_AWAKE_POS);     
             tilt.write(tiltPos);             // tell servo to go to position in variable 'pos'
             delay(5); 
           }
           } 
 else{         
-   for (riserPos = 180; riserPos >= 90; riserPos -= 1) { // goes from 0 degrees to 180 degrees
+   for (riserPos = RISER_AWAKE_POS;  riserPos>= RISER_SLEEP_POS; riserPos -= 1) { // goes from 0 degrees to 180 degrees
             riser.write(riserPos); 
             delay(5); 
-            tiltPos = map(riserPos,80,180,80,20);     
+            tiltPos = map(riserPos,RISER_SLEEP_POS,RISER_AWAKE_POS,TILT_SLEEP_POS,TILT_AWAKE_POS);     
             tilt.write(tiltPos);             // tell servo to go to position in variable 'pos'
             delay(5); 
    }
@@ -204,13 +201,27 @@ void moveServos() {
     if (newData) {
       String argument = String(rxBuff);
       //Do Something------------------------------------
-      float readNum = sanitiseInputNum(argument.toInt());
+      int readPan = sanitiseInputNum(argument.toInt());
       //Do Something------------------------------------
             
-      pan.write(readNum);
+      pan.write(readPan);
       Serial.print("(i)Function <2> called. Argument parsed correctly as float. Value was: ");
-      Serial.print(readNum);
+      Serial.print(readPan);
       Serial.println("(/i)");
+      //----------------------------------------------------
+      newData = requestUserInput = false;
+
+    }
+  }                                                                                   
+    else if (requestUserInput) {
+    if (newData) {
+      String argument = String(rxBuff);
+      //Do Something------------------------------------
+      int readTilt = sanitiseInputNum(argument.toInt());
+      //Do Something------------------------------------
+            
+      tilt.write(readTilt);
+
       //----------------------------------------------------
       newData = requestUserInput = false;
       cmdRequest = true;  // return to looking for user commands
@@ -220,6 +231,8 @@ void moveServos() {
     requestUserInput = true;
   }
 }
+
+
 
 // This function prints the main menu of options from FLASH
 void printMenu() {

@@ -1,6 +1,14 @@
 #include <stdint.h>
 #include <EEPROM.h>         // Used to read the internal Arduino EEPROM
 
+#define RISER_SLEEP_POS 80
+#define RISER_AWAKE_POS 180
+#define PAN_SLEEP_POS 105
+#define PAN_AWAKE_POS 105
+#define TILT_SLEEP_POS 80
+#define TILT_AWAKE_POS 20
+
+
 // Serial Port and Generic Constants
 const int BAUDRATE = 9600;        // Serial port speed
 const uint8_t DEBUG_PIN = 48;
@@ -16,8 +24,8 @@ const uint8_t EEDAC1MAX = 4;     // Increment 4 bytes to next address
 // Strings stored in FLASH
 const char mainMenu0[] PROGMEM = {"(i)Encapsulate input in angle brackets <...>\nMenu options:\n"};
 const char mainMenu1[] PROGMEM = {"<1>  Print this menu"};
-const char mainMenu2[] PROGMEM = {"<2>  Function 2 - accepts a numeric parameter. Example <2><12.345678>"};
-const char mainMenu3[] PROGMEM = {"<3>  Function 3 - accepts a string parameter. Example <3><deadbeef>"};
+const char mainMenu2[] PROGMEM = {"<2>  Function 2 - Sleep/Awake Mode. Example <2><1> for Awake and <2><0> for sleep mode"};
+const char mainMenu3[] PROGMEM = {"<3>  Function 3 - Pan/Tilt . Example <3><deadbeef>"};
 const char mainMenu4[] PROGMEM = {"<4>  Blink on-board LED (/i)"};
 
 // Main menu strings table
@@ -33,6 +41,10 @@ int userCmd = 0;                         // For switch structure, '0' not a vali
       
 char flashBuff[128];                     // Holds data from FLASH memory (strings saved and so on)
 
+int riserPos = 0;
+int tiltPos = 0;
+int panPos = 0;
+
 // Basic Functions
 void initSerial(void); 
 void getUserInput(void); 
@@ -40,6 +52,6 @@ void clear_rxBuff(void);
 void toggleDebugPin(void);
 void blinkLED_BUILT_IN(void);
 void printMenu(void);
-void funct2(void);
-void funct3(void);
+void changeAwakeState(void);
+void moveServos(void);
 float sanitiseInputNum(float num);
