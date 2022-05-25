@@ -115,5 +115,6 @@ C:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit/build/state_faceID.o: \
  C:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/uart.h \
  c:\maximsdk\libraries\miscdrivers\camera\camera.h \
  c:\maximsdk\libraries\miscdrivers\camera\ov7692_regs.h include/faceID.h \
+ C:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/rtc.h \
  include/embedding_process.h include/MAXCAM_Debug.h include/cnn.h \
  C:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/lp.h

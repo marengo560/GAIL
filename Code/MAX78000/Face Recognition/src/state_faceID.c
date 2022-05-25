@@ -33,6 +33,7 @@
 *******************************************************************************
 */
 #include <string.h>
+#include <led.h>
 #include <stdio.h>
 #include <stdint.h>
 #include "board.h"
@@ -44,7 +45,8 @@
 #include "utils.h"
 #include "camera.h"
 #include "faceID.h"
-#include "utils.h"
+#include "rtc.h"
+#include "uart.h"
 #include "embedding_process.h"
 #include "MAXCAM_Debug.h"
 #include "cnn.h"
@@ -77,6 +79,7 @@ static int key_process(int key);
 #ifdef LP_MODE_ENABLE
 static void ARM_low_power(int lp_mode);
 #endif
+#define DEBUG_COMPORT   MXC_UART0
 
 #ifdef TFT_ENABLE
 static text_t screen_msg[] = {
@@ -198,11 +201,11 @@ static int init(void)
 #endif
             run_count++;
 
-#if (PRINT_TIME==1)
+//#if (PRINT_TIME==1)
 
-            printf("\n\n\n");
-            PR_INFO("Process Time Total : %dms", utils_get_time_ms() - process_time);
-#endif
+ //         printf("\n\n\n");
+  //          PR_INFO("Process Time Total : %dms", utils_get_time_ms() - process_time);
+//#endif
 
 #ifdef LP_MODE_ENABLE
             cfg.cmp_cnt = ticks_1;
@@ -213,7 +216,7 @@ static int init(void)
 
             LED_On(0); // green LED on
             /* Configure low power mode */
-            ARM_low_power(LP_MODE);
+            //ARM_low_power(LP_MODE);
             LED_Off(0); // green LED off
 
             // Camera startup delay (~100ms) after resuming XVCLK clock generated
@@ -229,11 +232,11 @@ static int init(void)
 
 #endif
 
-#if (PRINT_TIME==1)
-            PR_INFO("Capture Time : %dms", process_time - total_time);
-            PR_INFO("Total Time : %dms", utils_get_time_ms() - total_time);
-            total_time = utils_get_time_ms();
-#endif
+//#if (PRINT_TIME==1)
+      //      PR_INFO("Capture Time : %dms", process_time - total_time);
+    //        PR_INFO("Total Time : %dms", utils_get_time_ms() - total_time);
+  //          total_time = utils_get_time_ms();
+//#endif
 
             camera_start_capture_image();
             /* Sleep until camera interrupt */
@@ -325,7 +328,7 @@ static void process_img(void)
         image += ((IMAGE_W - (HEIGHT + 2 * THICKNESS)) / 2);
     }
 
-    PR_INFO("Frame drawing time : %d", utils_get_time_ms() - pass_time);
+    //PR_INFO("Frame drawing time : %d", utils_get_time_ms() - pass_time);
 
     pass_time = utils_get_time_ms();
 
@@ -362,7 +365,7 @@ static void process_img(void)
 
 #endif //#ifdef TFT_ENABLE
 
-    PR_INFO("Screen print time : %d", utils_get_time_ms() - pass_time);
+    //PR_INFO("Screen print time : %d", utils_get_time_ms() - pass_time);
 }
 
 static void run_cnn(int x_offset, int y_offset)
@@ -392,7 +395,7 @@ static void run_cnn(int x_offset, int y_offset)
 
     cnn_start();
 
-    PR_INFO("CNN initialization time : %d", utils_get_time_ms() - pass_time);
+    //PR_INFO("CNN initialization time : %d", utils_get_time_ms() - pass_time);
 
     uint8_t* data = raw;
 
@@ -429,7 +432,7 @@ static void run_cnn(int x_offset, int y_offset)
 
     int  cnn_load_time = utils_get_time_ms() - pass_time;
 
-    PR_DEBUG("CNN load data time : %d", cnn_load_time);
+    //PR_DEBUG("CNN load data time : %d", cnn_load_time);
 
 #ifdef TFT_ENABLE
     text_t printResult;
@@ -453,7 +456,7 @@ static void run_cnn(int x_offset, int y_offset)
         asm volatile("wfi"); // Sleep and wait for CNN interrupt
     }
 
-    PR_INFO("CNN wait time : %d", utils_get_time_ms() - pass_time);
+    //PR_INFO("CNN wait time : %d", utils_get_time_ms() - pass_time);
 
     pass_time = utils_get_time_ms();
 
@@ -464,14 +467,14 @@ static void run_cnn(int x_offset, int y_offset)
     // Disable CNN clock to save power
     MXC_SYS_ClockDisable(MXC_SYS_PERIPH_CLOCK_CNN);
 
-    PR_INFO("CNN unload time : %d", utils_get_time_ms() - pass_time);
+    //PR_INFO("CNN unload time : %d", utils_get_time_ms() - pass_time);
 
     pass_time = utils_get_time_ms();
 
     int pResult = calculate_minDistance((uint8_t*)(raw));
 
-    PR_INFO("Embedding time : %d", utils_get_time_ms() - pass_time);
-    PR_INFO("Result = %d \n", pResult);
+   // PR_INFO("Embedding time : %d", utils_get_time_ms() - pass_time);
+   // PR_INFO("Result = %d \n", pResult);
 
     if (pResult == 0) {
         char* name;
@@ -484,49 +487,53 @@ static void run_cnn(int x_offset, int y_offset)
         prev_decision = decision;
         decision = -5;
 
-        PR_INFO("counter_len: %d,  %d,%d,%d\n", counter_len, counter[0], counter[1], counter[2]);
+       // PR_INFO("counter_len: %d,  %d,%d,%d\n", counter_len, counter[0], counter[1], counter[2]);
 #if 1
 
         for (uint8_t id = 0; id < counter_len; ++id) {
             if (counter[id] >= (uint8_t)(closest_sub_buffer_size * 0.8)) { // >80%  detection
                 name = get_subject(id);
+                LED_On(LED1);
                 decision = id;
                 noface_count = 0;
-                PR_DEBUG("Status: %s \n", name);
-                PR_INFO("Detection: %s: %d", name, counter[id]);
+               // PR_DEBUG("Status: %s \n", name);
+               // PR_INFO("Detection: %s: %d", name, counter[id]);
                 break;
             }
             else if (counter[id] >= (uint8_t)(closest_sub_buffer_size * 0.4)) { // >%40 adjust
                 name = "Adjust Face";
+                LED_Off(LED1);
                 decision = -2;
                 noface_count = 0;
-                PR_DEBUG("Status: %s \n", name);
-                PR_INFO("Detection: %s: %d", name, counter[id]);
+                //PR_DEBUG("Status: %s \n", name);
+                //PR_INFO("Detection: %s: %d", name, counter[id]);
                 break;
             }
             else if (counter[id] > closest_sub_buffer_size * 0.2) {  //>>20% unknown
                 name = "Unknown";
+                LED_Off(LED1);
                 decision = -1;
                 noface_count = 0;
-                PR_DEBUG("Status: %s \n", name);
-                PR_INFO("Detection: %s: %d", name, counter[id]);
+                //PR_DEBUG("Status: %s \n", name);
+                //PR_INFO("Detection: %s: %d", name, counter[id]);
                 break;
             }
-            else if (counter[id] > closest_sub_buffer_size * 0.1) { //>> 10% transition
-                name = "";
-                decision = -3;
-                noface_count = 0;
-                PR_DEBUG("Status: %s \n", name);
-                PR_INFO("Detection: %s: %d", name, counter[id]);
-            }
+           // else if (counter[id] > closest_sub_buffer_size * 0.1) { //>> 10% transition
+             //   name = "";
+               // decision = -3;
+               // noface_count = 0;
+                ////PR_DEBUG("Status: %s \n", name);
+                ////PR_INFO("Detection: %s: %d", name, counter[id]);
+            //}
             else {
                 noface_count ++;
 
                 if (noface_count > 10) {
                     name = "No face";
+                    LED_Off(LED1);
                     decision = -4;
                     noface_count --;
-                    PR_INFO("Detection: %s: %d", name, counter[id]);
+                  //  PR_INFO("Detection: %s: %d", name, counter[id]);
                 }
             }
         }
@@ -553,7 +560,14 @@ static void run_cnn(int x_offset, int y_offset)
 
 #endif
 
-        PR_DEBUG("Decision: %d Name:%s \n", decision, name);
+        //PR_DEBUG("Decision: %d Name:%s \n", decision, name);
+        int len;
+        
+        len=strlen(name);
+        //utils_send_bytes(DEBUG_COMPORT, (uint8_t*)name, len);
+        //utils_send_bytes(DEBUG_COMPORT, (uint8_t*)"\r\n", 4);
+        printf(name);
+        printf("\n");
 
 #ifdef TFT_ENABLE
 
@@ -596,9 +610,9 @@ static void ARM_low_power(int lp_mode)
         break;
 
     case 4:
-        PR_DEBUG("Enter STANDBY\n");
+        //PR_DEBUG("Enter STANDBY\n");
         MXC_LP_EnterStandbyMode();
-        PR_DEBUG("Exit STANDBY\n");
+        //PR_DEBUG("Exit STANDBY\n");
         break;
 
     case 5:
