@@ -3,6 +3,8 @@ import sounddevice as sd
 from scipy.io.wavfile import write
 import wavio as wv
 import os
+from playsound import playsound
+  
 
 # Sampling frequency
 freq = 16000
@@ -23,4 +25,12 @@ while i<50:
     sd.wait()
     text =word_name+str(i)+".wav"
     write(os.path.join(word_name,text), freq, recording)
+    # for playing note.wav file
+    #temp= input("enter r for replay or enter d to delete: ")
+    #if temp=="r":
+     #   os.system("afplay"+"{}/{}".format(word_name,text))
+    #elif temp=="d":
+     #   os.remove(os.path.join(word_name,text))
+      #  i-=1
+
     i+=1
