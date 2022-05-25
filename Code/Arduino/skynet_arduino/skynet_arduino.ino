@@ -210,23 +210,11 @@ void moveServos() {
       Serial.println("(/i)");
       //----------------------------------------------------
       newData = requestUserInput = false;
+      cmdRequest = true;  // return to looking for user commands
 
     }
   }                                                                                   
-    else if (requestUserInput) {
-    if (newData) {
-      String argument = String(rxBuff);
-      //Do Something------------------------------------
-      int readTilt = sanitiseInputNum(argument.toInt());
-      //Do Something------------------------------------
-            
-      tilt.write(readTilt);
-
-      //----------------------------------------------------
-      newData = requestUserInput = false;
-      cmdRequest = true;  // return to looking for user commands
-    }
-  } else {
+ else {
     newData = false;  // if rxBuff data isn't available request it
     requestUserInput = true;
   }
