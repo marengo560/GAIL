@@ -1,0 +1,25 @@
+Communication Packet format
+
+From Raspberry pi to Arduino
+  <X><Y><Z>
+
+Wake up: 
+  <1>
+
+  <2><X>
+  
+Motion:
+  <3><XY>
+  X : U for Tilt Up
+      D for Tilt Down
+      N for no movement
+      
+  Y : R for Pan Right
+      L for Pan Left
+      N for no movement
+  
+Examples:
+  <3><UL>   : for moving arm up and left
+  <3><NR>   : for moving only right
+  
+  
